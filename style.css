@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+ header{
+    background-color:#1a1a2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+ }
+
+ header h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+   
+ }
+
+ header p{
+    color:#a0a5b5; 
+    font-size: 1.1rem;
+ }
+
+ nav{
+    background-color:#0f3460;
+    text-align: center;
+    padding: 15px 0;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    box-shadow:0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ nav a{
+    color: #ffffff;
+    text-decoration: none;
+    margin:0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+ }
+
+ nav a:hover{
+    color:#e94560;
+ }
+ 
+ .hero-banner{
+    background: linear-gradient(135deg,#e94560,#950740);
+    color: #ffffff;
+    text-align:center;
+    padding: 35px 20px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    box-shadow:0 4px 12px rgba(233, 69, 96, 0.3);
+ }
+
+ .hero-banner h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+ }
+
+ section h2{
+    color: #1a1a2e;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #0f3460; 
+ }
+
+ .product-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+ }
+
+ .product-card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e1e4e8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .product-card:hover{
+    transform: translateY(-5px);
+    box-shadow:0 8px 20px rgba(0, 0, 0, 0.12);
+ }
+
+ .product-card h3{
+    color: #1a1a2e;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    min-height: 4.2em; 
+    display: flex;
+    align-items: flex-end;
+ }
+ .product-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #e94560 !important;
+    margin-bottom: 4px !important;
+}
+
+.stock {
+    color: #2e7d32 !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: #1a1a2e;
+    color: #a0a5b5;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 20px;
+    border-top: 1px solid #2d2d44;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
